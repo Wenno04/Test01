@@ -1,0 +1,76 @@
+Hello
+git --version   //查看版本号
+git config --global user.name "Wenno04"    //登录到github
+git config --global user.email wenno04r1ce@gmail.com
+git config --list     //查看是否登陆成功
+
+创建项目文件夹Git Demo 在其中添加文件
+
+右击Git Demo的空白区域 选择git bash here  命令行进入项目所在目录
+
+// git工具的使用
+
+git status      //查看状态  ---> 不是git 仓库
+
+git init    //初始化git仓库
+
+git add a.txt      //往仓库里添加文件
+
+git status      //查看状态  ---> 缓冲区有文件a.txt了
+
+git commit -m "first commit"     //提交修改  git commit -m [message]         //[message] 可以是一些备注信息。
+
+git status      //查看状态  ---> 已经提交
+
+git log  //查看日志
+
+git branch a   //创建分支
+
+git branch   // 查看分支
+
+git checkout a  // 切换分支
+
+git checkout master  // 切换分支
+
+git merge a   //合并分支
+
+git tag v1.0   //添加标签  标签相当于快照版本号
+
+git tag -a v2.0   //等价的
+
+git tag  // 查看标签
+
+
+// 本地和远程仓库的交互
+ssh       // 远程的代码管理是基于SSH的，所以要使用远程的Git则需要SSH的配置
+
+ssh-keygen -t rsa  // 用rsa算法生成ssh密钥		
+
+//密钥生成后在GitHub上添加密钥    头像->setting->SSH and GPG keyss ->new SSH key->粘贴提交
+
+ssh -T git@github.com  //验证 成功-> 远程代码交互
+
+克隆仓库
+
+右击Git Demo的空白区域 选择git bash here  命令行进入项目所在目录
+
+// git工具的使用
+
+git status      //查看状态  ---> 不是git 仓库
+
+git init    //初始化git仓库
+
+git status
+
+git add a.txt      //往仓库里添加文件
+
+git status
+
+git clone 项目地址   // git clone [url]   克隆仓库   克隆完成后会在当前目录下
+
+
+
+
+
+
+
